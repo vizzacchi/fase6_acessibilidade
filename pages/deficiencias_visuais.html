@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="">
+	<title>Accessibility | Home</title>
+
+	<!------ Css ------>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!----- Icons ----->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<a href="../index.html" class="navbar-brand">
+				<img src="" alt="...">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-navbar"
+				aria-expanded="false">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nav-navbar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="deficiencias.html" class="nav-link">Deficiências</a></li>
+					<li class="nav-item"><a href="deficiencia_auditiva.html" class="nav-link active">Auditivas</a></li>
+					<li class="nav-item"><a href="deficiencias_visuais.html" class="nav-link">Visuais</a></li>
+					<li class="nav-item"><a href="deficiencias_mentais.html" class="nav-link">Mentais</a></li>
+					<li class="nav-item"><a href="deficiencias_fisicas.html" class="nav-link">Físicas</a></li>
+					<li class="nav-item"><a href="forum.html" class="nav-link">Fórum</a></li>
+				</ul>
+				<ul class="navbar-nav ms-auto pe-3">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">Acessibilidade</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li class="dropdown-item">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="chk">
+									<label class="form-check-label" for="chk">Contraste</label>
+								</div>
+							</li>
+							<li><a href="#" class="dropdown-item" onclick="aumenta()"><i
+										class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
+							<li><a href="#" class="dropdown-item" onclick="diminui()"><i
+										class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
+							<li><a href="#" class="dropdown-item" onclick="dislexia()"><i
+										class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
+							<li><a href="#" class="dropdown-item" onclick="roboto()"><i
+										class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
+
+						</ul>
+					</li>
+				</ul>
+
+				<!------- Login ------->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvas-login">Entrar</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!----- Offcanvas ----->
+		<div class="offcanvas offcanvas-end" id="offcanvas-login">
+			<div class="offcanvas-header">
+				<small>MENU</small>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+
+			</div>
+		</div>
+	</header>
+
+	<!----- Conteúdo ----->
+	<main>
+		<article class="article-card mb-3">
+			<div class="container">
+				<section>
+					<div class="row">
+						<div class="col-6">
+							<h4>Deficiência Visual</h4>
+						</div>
+						<div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item">Index</li>
+									<li class="breadcrumb-item">Deficiências</li>
+									<li class="breadcrumb-item active">Visual</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="dicas_img"><img src="../images/baixa_visao.png" class="img-fluid"
+							alt="Orientações de como desenvolver para quem têm algum tipo de deficiência auditiva."
+							title="Orientações para desenvolvimento pensando em quem deficiência auditiva">
+					</div>
+					<div class="dores">
+						<h2 class="mb-4">Principais Dificuldades</h2>
+						<ul>
+							<li class="lista_title">Dificuldades em obter
+								informações apresentadas visualmente</li>
+							<li class="lista_none"></li>
+							<li class="lista_title">Interagir usando um dispositivo diferente do teclado</li>
+							<li class="lista_none"></li>
+							<li class="lista_title">
+								Distinguir rapidamente os links num documento
+							</li>
+							<li class="lista_none"></li>
+							<li class="lista_title">Navegar através de conceitos espaciais</li>
+							<li class="lista_title">Distinguir entre outros sons uma voz produzida por síntese</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2 class="mt-4 repositorios">Códigos | Repositórios | APIs</h2>
+					<p>
+						Se você conhece algum site, ferramenta ou desenvolveu algo que possa contribuir para o
+						desenvolvimento de nosso portal, faça seu <a href="#">login</a> e divulgue nesse portal. JUNTO
+						SOMOS MAIS
+						FORTES.
+					</p>
+					<ul>
+						<li class="lista_title">Script para alteração tamanho da fonte</li>
+						<li class="lista_none">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, earum nulla! Voluptatum minus
+							labore nam quibusdam, qui commodi ex corrupti voluptas molestiae possimus sapiente,
+							reprehenderit quod asperiores, quaerat sunt architecto.
+							Acesse a docuemntação<a
+								href="https://www.gov.br/governodigital/pt-br/vlibras/">https://www.gov.br/governodigital/pt-br/vlibras/</a>
+							<br>
+							<!-- Button trigger modal -->
+							<a class="link_codigos" data-bs-toggle="modal" data-bs-target="#vlibras">
+								Veja um exemplo de código.
+							</a>
+						</li>
+						<li class="lista_title">Script para mudar o contraste da tela</li>
+						<li class="lista_none">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia praesentium vero
+							blanditiis. Necessitatibus nesciunt doloremque ex distinctio saepe ab, harum eos voluptate
+							illum reprehenderit adipisci, odio non corrupti laborum eveniet? <a
+								href="https://www.handtalk.me/br/">https://www.handtalk.me/br/</a><br>
+							<!-- Button trigger modal -->
+							<a class="link_codigos" data-bs-toggle="modal" data-bs-target="#vlibras">
+								Veja um exemplo de código.
+							</a>
+						</li>
+						<li class="lista_title">Estudo de "Acessibilidade para Deficientes Visuais"</li>
+						<li class="lista_none">Nesse trabalho descreve-se a situação atual em que se encontra o acesso a Internet para as pessoas portadoras de deficiência
+						visual,. São propostas formas de desenvolvimento de páginas com o emprego de regras de acessibilidade. As regras
+						propostas foram testadas através do uso de um browser adaptados aos deficientes visuais desenvolvido no contexto do
+						projeto DOSVOX. Enfatiza importância do desenvolvimento de páginas acessíveis de boa qualidade.</a><br>
+						<a href="http://www.mpgo.mp.br/portalweb/hp/41/docs/acessibilidade_na_internet_para_deficientes_visuais.pdf#:~:text=Um%20deficiente%20visual%2C%20ao%20usar%20a%20Internet%20enfrentar%C3%A1,e%20para%20compreender%20a%20estrutura%20de%20um%20documento.">Acesse aqui</a>
+						</li>
+					</ul>
+					<h3>Leitores de Tela</h3>
+					<ul>
+						<li class="lista_title">DosVox</li>
+						<li class="lista_title">Jaws</li>
+						<li class="lista_title">Virtual Vision</li>
+						<li class="lista_title">NVDA</li>
+					</ul>
+
+					<!-- Modal -->
+					<div class="modal fade" id="vlibras" tabindex="-1" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">VLIBRAS</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<h2>Integrando a uma Página Web</h2>
+									<p>A integração do VLibras Widget com um website é feita com a inserção de
+										alguns trechos de código antes do fechamento da
+										tag <code>body</code> de uma página HTML. Veja o exemplo:
+
+									<div>
+										<code>
+												&lt;body&gt;<br>
+													<!-- Inicio do corpo da página -->
+													Esse texto será lido em LIBRAS <br>
+
+													
+													<!-- Conteúdo da página -->
+
+													&lt;div vw class="enabled"&gt;<br>
+														&lt;div vw-access-button class="active">&lt;/div&gt;<br>
+														&lt;div vw-plugin-wrapper&gt;<br>
+															&lt;div class="vw-plugin-top-wrapper">&lt;/div&gt;<br>
+														&lt;/div&gt;<br>
+													&lt;/div&gt;<br>
+													&lt;script src="https://vlibras.gov.br/app/vlibras-plugin.js"&gt;&lt;/script&gt;<br>
+													&lt;script&gt;<br>
+														new window.VLibras.Widget('https://vlibras.gov.br/app');<br>
+													&lt;/script&gt;<br>
+												&lt;/body&gt; <!-- Fim do corpo da página -->
+											</code>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	<!----- JavaScript ----->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+
+	<!--- Accessibility --->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+	<script type="text/javascript" src="../js/accessibility-dark-mode.js"></script>
+</body>
+
+</html>
