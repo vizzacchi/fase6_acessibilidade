@@ -1,43 +1,54 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: opendyslexicaltaregular;
+    src: url(../fonts/opendyslexicalta-regular-webfont.eot);
+    src: url(../fonts/opendyslexicalta-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opendyslexicalta-regular-webfont.woff2) format('woff2'),
+         url(../fonts/opendyslexicalta-regular-webfont.woff) format('woff'),
+         url(../fonts/opendyslexicalta-regular-webfont.ttf) format('truetype'),
+         url(../fonts/opendyslexicalta-regular-webfont.svg#opendyslexicaltaregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
 	--body-bg: #F3F5F8;
 	--body-bg-card: #FFF;
 	--body-card-bg: #FFF;
-	--font-color: #000;
+	--body-bg-footer: #1D262D;
+	--font-color: #374957;
 	--menu-shadow: 0 2px 10px 0 rgb(158 184 209 / 43%);
 }
+
 /******** Dark Mode ********/
 .dark-mode {
     --body-bg: #202225;
 	--body-bg-card: #36393F;
-	--body-card-bg: #202225;	
+	--body-card-bg: #202225;
+	--body-bg-footer: #202225;
 	--font-color: #FFF;
     --menu-shadow: 0 2px 10px 0 rgb(32 34 37 / 43%);
 }
 /****************************/
 
+/*********** Body ***********/
 body {
 	color: var(--font-color);
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px !important;
+	font-size: 16px !important;
 	background-color: var(--body-bg)
 }
+/****************************/
 
 /********** Header **********/
 header nav.navbar {
 	padding-right: 2rem !important;
 	padding-left: 2rem !important;
 	background-color: #3D405B;
-	box-shadow: var(--menu-shadow);
-	z-index: 1 !important
+	box-shadow: var(--menu-shadow)
 }
 header nav.navbar a {
 	text-decoration: none;
-}
-header nav.navbar a i {
-    font-size: 1.6rem;
-	color: #FFF
 }
 /****************************/
 
@@ -49,22 +60,45 @@ main {
 
 /********* Sections *********/
 section {
-	height: 3rem
+	padding: 2rem 0 1.4rem 0
+}
+section h1 {
+	margin-bottom: 0
+}
+section nav {
+	margin-top: .7rem;
+	margin-bottom: 0
 }
 /****************************/
 
 /********* Articles *********/
+article {
+	padding: 4rem 2rem
+}
 article.article-card {
-	padding: 2rem;
 	background-color: var(--body-bg-card)
 }
 article .accessibility-text {
-	margin-top: 5%
+	margin-top: 4%
 }
 article .accessibility-img {
-	margin-top: 10%;
-	width: 70%;
-	height: fit-content;
+	width: 60%;
+	height: fit-content
+}
+article .accessibility-img-dicas {
+	width: 80%;
+	height: fit-content
+}
+article .lista_title {
+	font-weight: 800;
+	margin-top: 1.9rem
+}
+article .lista_none {
+	list-style: none;
+	margin-top: 0.6rem
+}
+article .repositorios {
+	text-align: center
 }
 /****************************/
 
@@ -73,35 +107,52 @@ article .accessibility-img {
 	background-color: var(--body-card-bg);
 }
 .card img {
-	height: 140px;
+	height: 170px;
 }
-.card-text{
-	height:15rem;
+.card .card-button {
+    padding: 1rem
 }
 /****************************/
-.dicas_img{
-	width: 40%;
-	float: left;
-	clear: both;
-	margin-bottom: 3rem;
+
+/********** Button **********/
+/***GREEN***/
+.btn-green {
+--bs-btn-color: #FFF;
+--bs-btn-bg: #26BE92;
+--bs-btn-border-color: #26BE92;
+--bs-btn-hover-color: #FFF;
+--bs-btn-hover-bg: #22AB83;
+--bs-btn-hover-border-color: #22AB83;
+--bs-btn-focus-shadow-rgb: 32, 201, 151;
+--bs-btn-active-color: #FFF;
+--bs-btn-active-bg: var(--color-green);
+--bs-btn-active-border-color: #26BE92;
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+--bs-btn-disabled-color:#FFF;
+--bs-btn-disabled-bg: #26BE92;
+--bs-btn-disabled-border-color: #26BE92;
 }
-.dores{
-	width: 45%;
-	float: right;
+/****************************/
+
+/********** Images **********/
+img.image-avatar {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%
 }
-.lista_none{
-	list-style: none;
-	margin-top: 0.6rem;
+/****************************/
+
+/********** Footer **********/
+footer {
+    padding: 3rem 0 2rem 0 !important;
+	color: #bac8d3 !important;
+	background-color: var(--body-bg-footer)
 }
-.lista_title{
-	font-weight: 800;
-	margin-top: 1.9rem;
+footer i {
+	font-size: 1.4rem;
+    color: #bac8d3 !important;
 }
-.repositorios{
-	clear: both;
-	margin-top: 5rem;
-	text-align: center;
-}
+/****************************/
 
 /********** @Media **********/
 @media(max-width: 720px) {
@@ -111,8 +162,5 @@ article .accessibility-img {
 	article .accessibility-img {
 		width: 100%
 	}
-}
-@media(max-width: 960px) {
-
 }
 /****************************/
