@@ -45,6 +45,7 @@ header nav.navbar {
 	padding-right: 2rem !important;
 	padding-left: 2rem !important;
 	background-color: #3D405B;
+	opacity: 0.96;
 	box-shadow: var(--menu-shadow)
 }
 header nav.navbar a {
@@ -114,8 +115,18 @@ article .repositorios {
 }
 /****************************/
 
+/******* Janela Modal *******/
+.modal .modal-header {
+	padding: .6rem 1rem !important;
+	border: none;
+	box-shadow: var(--menu-shadow)
+}
+.modal-footer {
+	border: none
+}
+/****************************/
+
 /********** Button **********/
-/***GREEN***/
 .btn-green {
 --bs-btn-color: #FFF;
 --bs-btn-bg: #26BE92;
@@ -156,10 +167,16 @@ footer i {
 
 /********** @Media **********/
 @media(max-width: 720px) {
+	article {
+		padding: 2rem 0
+	}
 	article .accessibility-text {
 		margin-top: 0
 	}
 	article .accessibility-img {
+		width: 100%
+	}
+	article .accessibility-img-dicas {
 		width: 100%
 	}
 }

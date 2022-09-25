@@ -15,6 +15,7 @@
     overflow-x: auto;
     padding: 0.5em;
     background: #282a36;
+    border-radius: .4rem
 }
   
 .hljs-built_in,
