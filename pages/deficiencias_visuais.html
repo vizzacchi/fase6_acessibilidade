@@ -141,8 +141,130 @@
 
 			<!------ Exemplos ------>
 			<article class="article-card">
-				<div class="container">					
+				<div class="container">	
+					<h3>Scripts para facilitar a visualização e estudos</h3>
+					<ul>
+						<li class="lista_title">Script para mudar o contraste da tela</li>
+						<li class="lista_none">
+							Permite ao usuário mudar o contraste da tela, como por exemplo é feito nesta página no
+							dropdown de Acessibilidade > Contraste.<br>
+							<!-- Button trigger modal -->
+							<a class="link_codigos" data-bs-toggle="modal" data-bs-target="#contraste">
+								Veja um exemplo de código.
+							</a>
+						</li>
+						<li class="lista_title">Script para alteração tamanho da fonte</li>
+						<li class="lista_none">
+							Permite ao usuário aumentar ou diminuir o tamanho da fonte via menu, como por exemplo é feito nesta página no
+							dropdown de Acessibilidade > Aumente ou Diminui Fonte.<br>
+							<!-- Button trigger modal -->
+							<a class="link_codigos" data-bs-toggle="modal" data-bs-target="#tamanhoFonte">
+								Veja um exemplo de código.
+							</a>
+						</li>
+						<li class="lista_title">Estudo de "Acessibilidade para Deficientes Visuais"</li>
+						<li class="lista_none">Nesse trabalho descreve-se a situação atual em que se encontra o acesso a
+							Internet para as pessoas portadoras de deficiência
+							visual,. São propostas formas de desenvolvimento de páginas com o emprego de regras de
+							acessibilidade. As regras
+							propostas foram testadas através do uso de um browser adaptados aos deficientes visuais
+							desenvolvido no contexto do
+							projeto DOSVOX. Enfatiza importância do desenvolvimento de páginas acessíveis de boa
+							qualidade.</a><br>
+							<a
+								href="http://www.mpgo.mp.br/portalweb/hp/41/docs/acessibilidade_na_internet_para_deficientes_visuais.pdf#:~:text=Um%20deficiente%20visual%2C%20ao%20usar%20a%20Internet%20enfrentar%C3%A1,e%20para%20compreender%20a%20estrutura%20de%20um%20documento." target="_blank">Acesse
+								aqui</a>
+						</li>
+					</ul><br>
+					<h3>Leitores de Tela</h3>
+					<ul>
+						<li class="lista_title">DosVox</li>
+						<li class="lista_none">O DOSVOX é um sistema computacional, baseado no uso intensivo de síntese de voz,
+							desenvolvido pelo Instituto Tércio Paciti, que se destina a facilitar o acesso de deficientes visuais a
+							microcomputadores.<br>
+							<a
+								href="http://intervox.nce.ufrj.br/dosvox/" target="_blank">Acesse aqui</a>
+						</li>
+						<li class="lista_title">Jaws</li>
+						<li class="lista_none">JAWS é um programa de computador leitor de tela para MIcrosoft Windows, que permite
+							usuários com deficiência visual lerem a tela por meio de uma saída de texto para voz ou um dispositivo
+							braille.<br>
+							<a href="https://www.tecassistiva.com.br/catalogo/jaws/" target="_blank">Acesse aqui</a>
+						</li>
+						<li class="lista_title">Virtual Vision</li>
+						<li class="lista_none">O Virtual Vision é um leitor de telas especialmente desenvolvido para que pessoas com
+							deficiência visual acessem com autonomia o Windows, o Office, navegadores, arquivos, pastas e outros
+							aplicativos, através da leitura dos menus e telas desses programas por um sintetizador de voz.<br>
+							<a href="https://www.virtualvision.com.br/" target="_blank">Acesse aqui</a>
+						</li>
+						<li class="lista_title">NVDA</li>
+						<li class="lista_none">NonVisual Desktop Access é um leitor de tela livre, aberto e portátil para a Microsoft
+							Windows. O projeto foi criado em 2006 por Michael Curran.<br>
+							<a href="http://www.acessibilidadelegal.com/33-nvda.php" target="_blank">Acesse aqui</a>
+						</li>
+					</ul>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="tamanhoFonte" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    	aria-hidden="true">
+                    	<div class="modal-dialog">
+                    		<div class="modal-content">
+                    			<div class="modal-header">
+                    				<h5 class="modal-title" id="exampleModalLabel">Script para alteração tamanho da fonte</h5>
+                    				<button type="button" class="btn-close" data-bs-dismiss="modal"
+                    					aria-label="Close"></button>
+                    			</div>
+                    			<div class="modal-body">
+                    				<p>A funcionalidade é feita com o seguinte código javascript:
+
+                    					<div>
+                    						<code>
+												function aumenta() {<br>
+												let el = document.querySelector('html'); // alterando uma propriedade<br>
+												el.style.fontSize = '20px';<br>
+												}
+												<br>
+												function diminui() {<br>
+												let el = document.querySelector('html'); // alterando uma propriedade<br>
+												el.style.fontSize = '15px';<br>
+												}
+                    						</code>
+                    					</div>
+                    			</div>
+                    			<div class="modal-footer">
+                    				<button type="button" class="btn btn-secondary"
+                    					data-bs-dismiss="modal">Fechar</button>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="contraste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Script para mudar o contraste da tela</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<p>A funcionalidade é feita com o seguinte código javascript:
+
+										<div>
+											<code>												
+												const chk = document.getElementById('chk')<br>
+												chk.addEventListener('change', () => {<br>
+												document.body.classList.toggle('dark-mode')<br>
+												});
+											</code>
+										</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</article>
