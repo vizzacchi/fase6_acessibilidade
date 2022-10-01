@@ -1,181 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="h-100">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="">
-		<title>Accessibility | Documentação</title>
 
-		<!------ Css ------>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../css/highlight-theme.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="">
+	<title>Accessibility | Documentação</title>
 
-		<!----- Icons ----->
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-				<a href="../index.html" class="navbar-brand">
-					<img src="" alt="...">
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-navbar" aria-expanded="false">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="nav-navbar">
-					<ul class="navbar-nav me-auto">
-						<li class="nav-item"><a class="nav-link" href="deficiencias.html">Deficiências</a></li>
-						<li class="nav-item"><a class="nav-link" href="deficiencias_auditivas.html">Auditivas</a></li>
-						<li class="nav-item"><a class="nav-link" href="deficiencias_fisicas.html">Físicas</a></li>
-						<li class="nav-item"><a class="nav-link" href="deficiencias_mentais.html">Mentais</a></li>
-						<li class="nav-item"><a class="nav-link" href="deficiencias_visuais.html">Visuais</a></li>
-						<li class="nav-item"><a class="nav-link active" href="documentacao.html">Documentação</a></li>
-						<li class="nav-item"><a class="nav-link" href="forum.html">Fórum</a></li>
-					</ul>
-					<ul class="navbar-nav ms-auto pe-3">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acessibilidade</a>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li class="dropdown-item">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="chk">
-										<label class="form-check-label" for="chk">Contraste</label>
-									</div>
-								</li>
-								<li><a href="#" class="dropdown-item" onclick="aumenta()"><i class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
-								<li><a href="#" class="dropdown-item" onclick="diminui()"><i class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
-								<li><a href="#" class="dropdown-item" onclick="dislexia()"><i class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
-								<li><a href="#" class="dropdown-item" onclick="roboto()"><i class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-login">Entrar</button>
-						</li>
-					</ul>
-				</div>
-			</nav>
+	<!------ Css ------>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/highlight-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
-			<!----- Offcanvas ----->
-			<div class="offcanvas offcanvas-end" id="offcanvas-login">
-				<div class="offcanvas-header">
-					<small>MENU</small>
-					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
+	<!----- Icons ----->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<a href="../index.html" class="navbar-brand">
+				<img src="" alt="...">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-navbar"
+				aria-expanded="false">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nav-navbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item"><a class="nav-link" href="deficiencias.html">Deficiências</a></li>
+					<li class="nav-item"><a class="nav-link" href="deficiencias_auditivas.html">Auditivas</a></li>
+					<li class="nav-item"><a class="nav-link" href="deficiencias_fisicas.html">Físicas</a></li>
+					<li class="nav-item"><a class="nav-link" href="deficiencias_intelectual.html">intelectual</a></li>
+					<li class="nav-item"><a class="nav-link" href="deficiencias_visuais.html">Visuais</a></li>
+					<li class="nav-item"><a class="nav-link active" href="documentacao.html">Documentação</a></li>
+					<li class="nav-item"><a class="nav-link" href="forum.html">Fórum</a></li>
+				</ul>
+				<ul class="navbar-nav ms-auto pe-3">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">Acessibilidade</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li class="dropdown-item">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="chk">
+									<label class="form-check-label" for="chk">Contraste</label>
+								</div>
+							</li>
+							<li><a href="#" class="dropdown-item" onclick="aumenta()"><i
+										class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
+							<li><a href="#" class="dropdown-item" onclick="diminui()"><i
+										class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
+							<li><a href="#" class="dropdown-item" onclick="dislexia()"><i
+										class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
+							<li><a href="#" class="dropdown-item" onclick="roboto()"><i
+										class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvas-login">Entrar</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!----- Offcanvas ----->
+		<div class="offcanvas offcanvas-end" id="offcanvas-login">
+			<div class="offcanvas-header">
+				<small>MENU</small>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+
+			</div>
+		</div>
+	</header>
+
+	<!----- Conteúdo ----->
+	<main>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h1 class="fw-bold">Documentação</h1>
+					</div>
+					<div class="col-sm-12 col-md-6 d-md-flex justify-content-md-end">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="../index.html">Index</a></li>
+								<li class="breadcrumb-item active">Documentação</li>
+							</ol>
+						</nav>
+					</div>
 				</div>
 			</div>
-		</header>
+		</section>
 
-		<!----- Conteúdo ----->
-		<main>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-md-6">
-							<h1 class="fw-bold">Documentação</h1>
+		<!------ Conteúdo ------>
+		<article class="article-card">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<div class="row mb-4">
+							<div class="col-6">
+								<label class="col-form-label">Repositórios:</label>
+							</div>
+							<div class="col-6 d-md-flex justify-content-md-end">
+								<button type="button" class="btn btn-green"><i class="bi bi-bookmark-fill"></i>
+									Novo</button>
+							</div>
 						</div>
-						<div class="col-sm-12 col-md-6 d-md-flex justify-content-md-end">
-							<nav aria-label="breadcrumb">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="../index.html">Index</a></li>
-									<li class="breadcrumb-item active">Documentação</li>
-								</ol>
-							</nav>
+						<div class="list-group list-group-flush">
+							<a href="#" class="list-group-item active" data-bs-toggle="list">Deficiência Audutiva</a>
+							<a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Física</a>
+							<a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Mental</a>
+							<a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Visual</a>
 						</div>
+					</div>
+					<div class="col-sm-12 col-md-9">
+						<h2 class="text-center fw-bold">Códigos | Repositórios | APIs</h2>
+						<p class="border-bottom pb-4">
+							Aqui você vai encontrar a melhores práticas de desenvolvimento, soluções já aplicadas por
+							outros desenvolvedores e poderá deixar sua contribuição.
+						</p>
+						<div class="list-group list-group-flush mb-4">
+							<a href="#modal_documentacao" class="list-group-item list-group-item-action"
+								data-bs-toggle="modal">
+								<div class="d-flex w-100 justify-content-between mb-1">
+									<small><strong>Adicionado por:</strong> Douglas Vizzacchi</small>
+									<small>24/09/2022 16:04</small>
+								</div>
+								<h5 class="mb-2 fw-bold text-primary">VLibras</h5>
+								<p class="mb-1">VLibras é um conjunto de ferramentas gratuitas e de código aberto que
+									traduz conteúdos digitais (texto, áudio e vídeo) em Português para Libras.</p>
+							</a>
+							<a href="#modal_documentacao" class="list-group-item list-group-item-action"
+								data-bs-toggle="modal">
+								<div class="d-flex w-100 justify-content-between mb-1">
+									<small><strong>Adicionado por:</strong> Guilherme Ribas</small>
+									<small>24/09/2022 16:04</small>
+								</div>
+								<h5 class="mb-2 fw-bold text-primary">LanCap</h5>
+								<p class="mb-1">Software open source, criado para legendar vídeos para libras e
+									português.</p>
+							</a>
+							<a href="#modal_documentacao" class="list-group-item list-group-item-action"
+								data-bs-toggle="modal">
+								<div class="d-flex w-100 justify-content-between mb-1">
+									<small><strong>Adicionado por:</strong> Ernesto de Oliveira</small>
+									<small>24/09/2022 16:04</small>
+								</div>
+								<h5 class="mb-2 fw-bold text-primary">Hand Talk</h5>
+								<p class="mb-1">O aplicativo brasileiro Hand Talk, promete ser um grande facilitador da
+									comunicação com pessoas com deficiência auditiva.</p>
+							</a>
+						</div>
+
+						<!------ Paginação ------>
+						<nav>
+							<ul class="pagination justify-content-end">
+								<li class="page-item disabled"><a class="page-link">Anterior</a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-			</section>
 
-			<!------ Conteúdo ------>
-			<article class="article-card">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-md-3">
-							<div class="row mb-4">
-								<div class="col-6">
-								  	<label class="col-form-label">Repositórios:</label>
-								</div>
-								<div class="col-6 d-md-flex justify-content-md-end">
-									<button type="button" class="btn btn-green"><i class="bi bi-bookmark-fill"></i> Novo</button>
-								</div>
+				<!-------- Modal -------->
+				<div class="modal fade" id="modal_documentacao" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">VLibras</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
 							</div>
-							<div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item active" data-bs-toggle="list">Deficiência Audutiva</a>
-                                <a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Física</a>
-                                <a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Mental</a>
-                                <a href="#" class="list-group-item" data-bs-toggle="list">Deficiência Visual</a>
-                            </div>
-						</div>
-						<div class="col-sm-12 col-md-9">
-                            <h2 class="text-center fw-bold">Códigos | Repositórios | APIs</h2>
-                            <p class="border-bottom pb-4">
-                                Aqui você vai encontrar a melhores práticas de desenvolvimento, soluções já aplicadas por
-                                outros desenvolvedores e poderá deixar sua contribuição.
-                            </p>
-                            <div class="list-group list-group-flush mb-4">
-                                <a href="#modal_documentacao" class="list-group-item list-group-item-action" data-bs-toggle="modal">
-                                    <div class="d-flex w-100 justify-content-between mb-1">
-                                        <small><strong>Adicionado por:</strong> Douglas Vizzacchi</small>
-                                        <small>24/09/2022 16:04</small>
-                                    </div>
-                                    <h5 class="mb-2 fw-bold text-primary">VLibras</h5>
-                                    <p class="mb-1">VLibras é um conjunto de ferramentas gratuitas e de código aberto que traduz conteúdos digitais (texto, áudio e vídeo) em Português para Libras.</p>
-                                </a>
-                                <a href="#modal_documentacao" class="list-group-item list-group-item-action" data-bs-toggle="modal">
-                                    <div class="d-flex w-100 justify-content-between mb-1">
-                                        <small><strong>Adicionado por:</strong> Guilherme Ribas</small>
-                                        <small>24/09/2022 16:04</small>
-                                    </div>
-                                    <h5 class="mb-2 fw-bold text-primary">LanCap</h5>
-                                    <p class="mb-1">Software open source, criado para legendar vídeos para libras e português.</p>
-                                </a>
-                                <a href="#modal_documentacao" class="list-group-item list-group-item-action" data-bs-toggle="modal">
-                                    <div class="d-flex w-100 justify-content-between mb-1">
-                                        <small><strong>Adicionado por:</strong> Ernesto de Oliveira</small>
-                                        <small>24/09/2022 16:04</small>
-                                    </div>
-                                    <h5 class="mb-2 fw-bold text-primary">Hand Talk</h5>
-                                    <p class="mb-1">O aplicativo brasileiro Hand Talk, promete ser um grande facilitador da comunicação com pessoas com deficiência auditiva.</p>
-                                </a>
-                            </div>
-
-                            <!------ Paginação ------>
-                            <nav>
-                                <ul class="pagination justify-content-end">
-                                    <li class="page-item disabled"><a class="page-link">Anterior</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
-                                </ul>
-                            </nav>
-						</div>
-					</div>
-
-                    <!-------- Modal -------->
-                    <div class="modal fade" id="modal_documentacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">VLibras</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <ul class="nav nav-pills nav-justified mb-3">
-										<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-html">HTLM</button></li>
-                                        <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-css">CSS</button></li>
-                                        <li class="nav-item"><button type="button" class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-javascript">JAVASCRIPT</button></li>
-										<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-comentario">Comentários</button></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="pills-javascript">
-                                            <pre>
+							<div class="modal-body">
+								<ul class="nav nav-pills nav-justified mb-3">
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-html">HTLM</button></li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-css">CSS</button></li>
+									<li class="nav-item"><button type="button" class="nav-link active"
+											data-bs-toggle="pill" data-bs-target="#pills-javascript">JAVASCRIPT</button>
+									</li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-comentario">Comentários</button></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="pills-javascript">
+										<pre>
                                                 <code class="language-javascript">
 const chk = document.getElementById('chk')
 chk.addEventListener('change', () => {
@@ -183,54 +211,63 @@ chk.addEventListener('change', () => {
 });
                                                 </code>
                                             </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-				</div>
-			</article>
-		</main>
-
-		<!------- Footer ------->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-9">
-						<div class="text-primary">
-							<i class="bi bi-twitter"></i>
-							<i class="bi bi-instagram ms-3"></i>
-							<i class="bi bi-facebook ms-3"></i>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+							</div>
 						</div>
-						<p>Accessibility | FIAP &copy;2022 - Todos os direitos reservados.</p>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-						<h5>Receba nossas novidades.</h5>
-						<button type="button" class="btn btn-outline-warning">Inscreva-se</button>
 					</div>
-                </div>
-            </div>
-        </footer>
+				</div>
+			</div>
+		</article>
+	</main>
 
-		<!------ VLibras ------>
-		<div vw class="enabled">
-			<div vw-access-button class="active"></div>
-			<div vw-plugin-wrapper>
-				<div class="vw-plugin-top-wrapper"></div>
+	<!------- Footer ------->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-9">
+					<div class="text-primary">
+						<i class="bi bi-twitter"></i>
+						<i class="bi bi-instagram ms-3"></i>
+						<i class="bi bi-facebook ms-3"></i>
+					</div>
+					<p>Accessibility | FIAP &copy;2022 - Todos os direitos reservados.</p>
+				</div>
+				<div class="col-sm-12 col-md-3">
+					<h5>Receba nossas novidades.</h5>
+					<button type="button" class="btn btn-outline-warning">Inscreva-se</button>
+				</div>
 			</div>
 		</div>
+	</footer>
 
-		<!----- JavaScript ----->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-        <script type="text/javascript">hljs.highlightAll();</script>
-		<script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-		<script type="text/javascript">new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-		<script type="text/javascript" src="../js/accessibility-dark-mode.js"></script>
-	</body>
+	<!------ VLibras ------>
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+
+	<!----- JavaScript ----->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js">
+	</script>
+	<script type="text/javascript">
+		hljs.highlightAll();
+	</script>
+	<script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script type="text/javascript">
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+	<script type="text/javascript" src="../js/accessibility-dark-mode.js"></script>
+</body>
+
 </html>
