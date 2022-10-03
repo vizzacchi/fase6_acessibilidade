@@ -44,7 +44,7 @@ body {
 header nav.navbar {
 	padding-right: 2rem !important;
 	padding-left: 2rem !important;
-	background-color: #3D405B;
+	background-color: #000;
 	opacity: 0.96;
 	box-shadow: var(--menu-shadow);
 	height: 4rem;
@@ -55,6 +55,10 @@ header nav.navbar a {
 .img-logo{
 	height: 4.3rem;
 }
+header nav.navbar .nav-item .active {
+	color: #46dd25;
+}
+
 /****************************/
 
 
@@ -162,12 +166,12 @@ img.image-avatar {
 /********** Footer **********/
 footer {
     padding: 3rem 0 2rem 0 !important;
-	color: #bac8d3 !important;
+	color: #87898a !important;
 	background-color: var(--body-bg-footer)
 }
 footer i {
 	font-size: 1.4rem;
-    color: #bac8d3 !important;
+    color: #87898a !important;
 }
 /****************************/
 
