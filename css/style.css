@@ -46,18 +46,24 @@ header nav.navbar {
 	padding-left: 2rem !important;
 	background-color: #3D405B;
 	opacity: 0.96;
-	box-shadow: var(--menu-shadow)
+	box-shadow: var(--menu-shadow);
+	height: 4rem;
 }
 header nav.navbar a {
 	text-decoration: none;
 }
+.img-logo{
+	height: 4.3rem;
+}
 /****************************/
+
 
 /*********** Main ***********/
 main {
 	margin-top: 3rem
 }
 /****************************/
+
 
 /********* Sections *********/
 section {

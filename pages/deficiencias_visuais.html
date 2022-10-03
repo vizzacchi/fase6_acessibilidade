@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="../css/highlight-theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 	<!----- Icons ----->
@@ -24,8 +26,7 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<a href="../index.html" class="navbar-brand">
-				<img src="" alt="...">
+				<img src="images/web4allredondo.png" class="img-fluid img-logo" alt="Logo Web 4 All">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-navbar"
 				aria-expanded="false">
@@ -36,7 +37,7 @@
 					<li class="nav-item"><a class="nav-link" href="deficiencias.html">Deficiências</a></li>
 					<li class="nav-item"><a class="nav-link" href="deficiencias_auditivas.html">Auditivas</a></li>
 					<li class="nav-item"><a class="nav-link" href="deficiencias_fisicas.html">Físicas</a></li>
-					<li class="nav-item"><a class="nav-link" href="deficiencias_intelectual.html">intelectual</a></li>
+					<li class="nav-item"><a class="nav-link" href="deficiencias_intelectual.html">Intelectual</a></li>
 					<li class="nav-item"><a class="nav-link active" href="deficiencias_visuais.html">Visuais</a></li>
 					<li class="nav-item"><a class="nav-link" href="documentacao.html">Documentação</a></li>
 					<li class="nav-item"><a class="nav-link" href="forum.html">Fórum</a></li>
@@ -154,12 +155,18 @@
 					JUNTO SOMOS MAISFORTES.
 				</p>
 			</div>
+			
 		</article>
 
 		<!------ Exemplos ------>
 		<article class="article-card">
 			<div class="container">
-				<h3>Scripts para facilitar a visualização e estudos</h3>
+				<h3>Scripts para facilitar a visualização e estudos
+			
+						<button type="button" class="btn btn-green"><i class="bi bi-bookmark-fill"></i>
+							Novo</button>
+					
+				</h3>
 				<ul>
 					<li class="lista_title">Script para mudar o contraste da tela</li>
 					<li class="lista_none">
@@ -194,7 +201,8 @@
 							aqui</a>
 					</li>
 				</ul><br>
-				<h3>Leitores de Tela</h3>
+				<h3>Leitores de Tela <button type="button" class="btn btn-green"><i class="bi bi-bookmark-fill"></i>
+					Novo</button></h3>
 				<ul>
 					<li class="lista_title">DosVox</li>
 					<li class="lista_none">O DOSVOX é um sistema computacional, baseado no uso intensivo de síntese de
@@ -229,33 +237,43 @@
 					</li>
 				</ul>
 
-				<!-- Modal -->
-				<div class="modal fade" id="tamanhoFonte" tabindex="-1" aria-labelledby="exampleModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog">
+				<!-------- Modal -------->
+				<div class="modal fade" id="tamanhoFonte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-scrollable modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Script para alteração tamanho da fonte
-								</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"
-									aria-label="Close"></button>
+								<h5 class="modal-title" id="exampleModalLabel">Alterando Tamanho da fonte</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
-								<p>A funcionalidade é feita com o seguinte código javascript:
-
-									<div>
-										<code>
-											function aumenta() {<br>
-											let el = document.querySelector('html'); // alterando uma propriedade<br>
-											el.style.fontSize = '20px';<br>
-											}
-											<br>
-											function diminui() {<br>
-											let el = document.querySelector('html'); // alterando uma propriedade<br>
-											el.style.fontSize = '15px';<br>
-											}
-										</code>
+								<ul class="nav nav-pills nav-justified mb-3">
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-html">HTLM</button></li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-css">CSS</button></li>
+									<li class="nav-item"><button type="button" class="nav-link active" data-bs-toggle="pill"
+											data-bs-target="#pills-javascript">JAVASCRIPT</button>
+									</li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-comentario">Comentários</button></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="pills-javascript">
+										<pre>
+											<code class="language-javascript">
+	function aumenta() {
+		let el = document.querySelector('html'); // alterando uma propriedade
+		el.style.fontSize = '20px';
+	}
+	
+	function diminui() {
+		let el = document.querySelector('html'); // alterando uma propriedade
+		el.style.fontSize = '15px';
+	}
+											</code>
+										</pre>
 									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -264,28 +282,40 @@
 					</div>
 				</div>
 
-				<!-- Modal -->
+				<!-------- Modal -------->
 				<div class="modal fade" id="contraste" tabindex="-1" aria-labelledby="exampleModalLabel"
 					aria-hidden="true">
-					<div class="modal-dialog">
+					<div class="modal-dialog modal-dialog-scrollable modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Script para mudar o contraste da tela
-								</h5>
+								<h5 class="modal-title" id="exampleModalLabel">Alterando Contraste da Tela</h5>
 								<button type="button" class="btn-close" data-bs-dismiss="modal"
 									aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
-								<p>A funcionalidade é feita com o seguinte código javascript:
-
-									<div>
-										<code>
-											const chk = document.getElementById('chk')<br>
-											chk.addEventListener('change', () => {<br>
-											document.body.classList.toggle('dark-mode')<br>
-											});
-										</code>
+								<ul class="nav nav-pills nav-justified mb-3">
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-html">HTLM</button></li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-css">CSS</button></li>
+									<li class="nav-item"><button type="button" class="nav-link active"
+											data-bs-toggle="pill" data-bs-target="#pills-javascript">JAVASCRIPT</button>
+									</li>
+									<li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="pill"
+											data-bs-target="#pills-comentario">Comentários</button></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="pills-javascript">
+										<pre>
+                                                <code class="language-javascript">
+	const chk = document.getElementById('chk')
+	chk.addEventListener('change', () => {
+		document.body.classList.toggle('dark-mode')
+	});
+                                                </code>
+                                            </pre>
 									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -293,7 +323,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</article>
 	</main>
@@ -328,9 +357,13 @@
 
 	<!----- JavaScript ----->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript"
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+		</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js">
+	</script>
+	<script type="text/javascript">
+		hljs.highlightAll();
 	</script>
 	<script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 	<script type="text/javascript">
